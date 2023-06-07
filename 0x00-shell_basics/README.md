@@ -9,3 +9,4 @@ move the file betty
 delete the file betty
 delete the directory
 change the working directory to the previous one
+list all files including the hidden,in long format
