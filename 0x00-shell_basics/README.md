@@ -7,3 +7,4 @@ current directory contents in long format,including hidden files and user and gr
 creates a directory in the directory /tmp/
 move the file betty
 delete the file betty
+delete the directory
