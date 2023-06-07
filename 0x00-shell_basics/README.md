@@ -12,3 +12,4 @@ change the working directory to the previous one
 list all files including the hidden,in long format
 to print the type of a file
 creating a symbolic link
+to copy all the html files
