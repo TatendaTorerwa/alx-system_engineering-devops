@@ -14,3 +14,4 @@ to print the type of a file
 creating a symbolic link
 to copy all the html files
 move all files beginning with an uppercase letter
+delete all files in the current directory that end with the character ~
