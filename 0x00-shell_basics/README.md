@@ -6,3 +6,4 @@ current directory contents,including hidden files using the long format
 current directory contents in long format,including hidden files and user and group IDs displayed numerically
 creates a directory in the directory /tmp/
 move the file betty
+delete the file betty
