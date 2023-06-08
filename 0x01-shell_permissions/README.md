@@ -8,3 +8,4 @@ script that adds execute permission to the owner and the group owner,and the rea
 script that adds execution permission to the owner,the group owner and the other users to the file hello.
 script that gives no permission at all to the owner and group and gives all the permission the other users.
 script to set the mode of the file hello.
+script that sets the mode of the file hello the same as olleh's mode.
