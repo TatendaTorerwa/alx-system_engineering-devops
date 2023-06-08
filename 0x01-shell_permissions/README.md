@@ -10,3 +10,4 @@ script that gives no permission at all to the owner and group and gives all the 
 script to set the mode of the file hello.
 script that sets the mode of the file hello the same as olleh's mode.
 script that adds execution permission to all subdirectories of the current directory for the owner,the group owner and other users.
+script that creates a directory with permissions 751 in the working directory.
