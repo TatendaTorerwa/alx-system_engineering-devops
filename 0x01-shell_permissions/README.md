@@ -13,3 +13,4 @@ script that adds execution permission to all subdirectories of the current direc
 script that creates a directory with permissions 751 in the working directory.
 script that changes the group owner to school for the file hello.
 script that changes the owner to vincent and the group owner to staff for all files and directories in the workind directory.
+script that changes the owner and the group owner to vincent and staff respectively.
