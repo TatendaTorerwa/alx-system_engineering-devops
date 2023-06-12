@@ -18,3 +18,4 @@ Script that display lines containing a certain pattern and 3 lines after them.
 Script that that display lines that do not contain a certain match.
 Script that displays all lines of the file starting with a letter.
 Script that replaces characters.
+Script that removes letters.
