@@ -7,3 +7,4 @@ Script that displays  the first 10 lines of a file.
 Script that displays the third line of a file.
 Script that creates a file.
 Script that writes into the file.
+Script that duplicates the last line of the file.
