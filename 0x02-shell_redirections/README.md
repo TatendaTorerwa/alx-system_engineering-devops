@@ -14,3 +14,4 @@ Script that displays 10 newest files.
 Script that takes a list of words as input and prints only words that appear exactly once.
 Script that display lines that contain a certain pattern.
 Script that display number of lines that contain a certain pattern.
+Script that display lines containing a certain pattern and 3 lines after them.
