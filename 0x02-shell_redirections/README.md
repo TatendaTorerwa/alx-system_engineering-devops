@@ -20,3 +20,4 @@ Script that displays all lines of the file starting with a letter.
 Script that replaces characters.
 Script that removes letters.
 Script that reverse its input.
+Script that displays all users and their home directories.
