@@ -12,3 +12,4 @@ Script that deletes all the regular files with a .js.
 Script that counts the number of directories and sub-directories.
 Script that displays 10 newest files.
 Script that takes a list of words as input and prints only words that appear exactly once.
+Script that display lines that contain a certain pattern.
