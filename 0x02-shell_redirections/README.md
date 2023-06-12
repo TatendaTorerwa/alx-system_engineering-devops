@@ -19,3 +19,4 @@ Script that that display lines that do not contain a certain match.
 Script that displays all lines of the file starting with a letter.
 Script that replaces characters.
 Script that removes letters.
+Script that reverse its input.
