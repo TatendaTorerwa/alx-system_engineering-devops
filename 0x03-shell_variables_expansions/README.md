@@ -11,3 +11,4 @@ Script that divides two variables.
 Script that that prints the power of variable.
 Script that converts a number to base 10.
 Script that prints all possible combinations of two letters.
+Script that prints a number with two decimal places.
