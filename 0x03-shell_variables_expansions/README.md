@@ -8,3 +8,4 @@ Script that creates a new local variable.
 Script that creates a new global variable.
 Script that prints the result of an addition.
 Script that divides two variables.
+Script that that prints the power of variable.
