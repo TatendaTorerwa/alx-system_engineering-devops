@@ -7,3 +7,4 @@ Script that lists all local variables,environmental variables,functions.
 Script that creates a new local variable.
 Script that creates a new global variable.
 Script that prints the result of an addition.
+Script that divides two variables.
