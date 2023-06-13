@@ -10,3 +10,4 @@ Script that prints the result of an addition.
 Script that divides two variables.
 Script that that prints the power of variable.
 Script that converts a number to base 10.
+Script that prints all possible combinations of two letters.
