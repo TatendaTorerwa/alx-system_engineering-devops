@@ -5,3 +5,4 @@ Script that counts the number of directories.
 Script that lists environmental variables.
 Script that lists all local variables,environmental variables,functions.
 Script that creates a new local variable.
+Script that creates a new global variable.
