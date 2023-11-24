@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
-# Kills the 4-to_infinity_and_beyond process.
+# Kills the 4-to_infinity_and_beyond
 
-pkill -f 7-highlander 
+./7-highlander &
+
+trap 'kill -15 $(pgrep -f "7-highlander")' EXIT
+
+while true; do
+    sleep 2
+done
