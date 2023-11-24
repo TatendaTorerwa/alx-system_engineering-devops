@@ -3,7 +3,7 @@
 #+ a sleep 2 in between each iteration.
 #   Displays "I am invincible!!!" in between each iteration.
 
-trap 'echo "I am invincible!!!"' 15
+trap 'echo "I am invincible!!!"; exit' SIGTERM
 while true
 do
   echo "To infinity and beyond"
