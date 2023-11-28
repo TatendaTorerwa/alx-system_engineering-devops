@@ -1,2 +1,8 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/hb?t?n/).join
+input = ARGV[0]
+matches = input.scan(/hb?tn)
+if matches
+  puts matches.join
+else
+  puts "No match found"
+end
