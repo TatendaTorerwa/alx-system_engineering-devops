@@ -1,9 +1,8 @@
 #!/usr/bin/env ruby
-
-if ARGV.empty?
-  puts 'Usage: ./script_name.rb <input>'
-  exit 1
+input = ARGV[0]
+matches = input.scan(/school/i)
+if matches
+  puts matches.join
+else
+  puts "No match found"
 end
-
-input = Regexp.escape(ARGV[0])
-puts input.scan(/School/i).join
