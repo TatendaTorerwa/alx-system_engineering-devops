@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 input = ARGV[0]
-matches = input.scan(/hb?tn)
+matches = input.scan(/hb?t?n)
 if matches
   puts matches.join
 else
