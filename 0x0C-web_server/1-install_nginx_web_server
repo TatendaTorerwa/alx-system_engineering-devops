@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#Commaniids to install nginx on web server.
+#Commands to install nginx on web server.
 
 #First update your servers packages
 
@@ -23,4 +23,4 @@ sudo nginx -t
 
 #Reload page to see the changes we made.
 
-sudo service nginx reload
+sudo service nginx start
