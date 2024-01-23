@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#Commznds to install nginx on web server.
+
+#First update your servers packages
+
+sudo apt-get update
+
+#Install nginx
+
+sudo apt-get install nginx
+
+#Change contsxt of the default nginx webpage
+
+echo "Hello World!" | sudo tee /var/wwww/html/index.html
+
+#Testing nginx configuration.
+
+sudo nginx -t
+
+#Reload page to see the changes we made.
+
+sudo service nginx reload
