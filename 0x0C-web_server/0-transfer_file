@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+#Check for command line arguments.
+
+if [ $# -lt 4 ]
+then
+	echo "Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
+	eixit 1
+fi
+
+#Assign parameters to variables.
+
+path_to_file=$1
+server_ip=$2
+username=$3
+path_to_shh_key=$4
+
+#Disable strict host key checking.
+
+SCP_OPTIONS="-o StrictHostKeyChecking=no"
+
+#Use scp to transfer the file to the server's home directory.
+
+scp $SCP_OPTIONS -i $path_to_shh_key $path_to_file $username@$server_ip:~/
+
+#Check if the trabsfer was successful.
+
+if [ $? -eq 0 ]
+then
+	echo "FILE was transfered successfully"
+else
+	echo "FILE transfer failed"
+fi
