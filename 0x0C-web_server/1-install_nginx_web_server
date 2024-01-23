@@ -11,7 +11,7 @@ sudo apt-get install nginx
 
 #HTTP port 80
 
-sudo utf 'Nginx HTTP'
+sudo ufw 'Nginx HTTP'
 
 #Change contsxt of the default nginx webpage
 
