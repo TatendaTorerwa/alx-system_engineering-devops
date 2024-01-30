@@ -1,7 +1,7 @@
-#!usr/bin/env bash
-#configuring web-1 to have an HTTP response header.
+#!/usr/bin/env bash
+# Customizing a 404-error_page
 
-#Update packages
+# Updating Packages before performing installations
 sudo apt-get update
 sudo apt-get install -y nginx
 
@@ -26,4 +26,3 @@ sudo nginx -t
 
 # Restart nginx after implementing changes
 sudo service nginx restart
-
