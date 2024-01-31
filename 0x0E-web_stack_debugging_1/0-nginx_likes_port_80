@@ -1,27 +1,43 @@
 #!/usr/bin/env bash
 # Configures an Nginx server to listen on port 80
+
 # Install necessary tools
 sudo apt-get update
 sudo apt-get install -y net-tools
 
-# Check Nginx configuration
-sudo nginx -t
-
-# Check current listening ports
-if sudo netstat -tulpn | grep -q :80; then
-  echo "Nginx is already listening on port 80."
+# Check if Nginx is running
+if ! pgrep -x "nginx" > /dev/null; then
+  echo "Nginx is not running. Starting Nginx..."
+  sudo service nginx start
 else
-  echo "Nginx is not currently listening on port 80. Checking and fixing..."
+  echo "Nginx is already running."
+fi
 
-  # Additional debugging steps go here, such as checking logs and updating configuration.
+# Check if Nginx is listening on port 80 for all active IPv4 IPs
+listen_ports=$(sudo netstat -tulpn | awk '/nginx/ && /:80/ {print $4}')
+ipv4_addresses=$(ip -4 addr show | awk '/inet / {print $2}' | cut -d '/' -f 1)
 
-  # Restart Nginx
-  sudo service nginx restart
+for port in $listen_ports; do
+  for address in $ipv4_addresses; do
+    if [[ $port == *$address* ]]; then
+      echo "Nginx is already listening on port 80 for IPv4 address $address."
+      exit 0
+    fi
+  done
+done
 
-  # Check listening ports again
-  if sudo netstat -tulpn | grep -q :80; then
-    echo "Nginx is now listening on port 80."
-  else
-    echo "Failed to make Nginx listen on port 80."
-  fi
+echo "Nginx is not currently listening on port 80 for all active IPv4 addresses. Checking and fixing..."
+
+# Additional debugging steps go here, such as checking logs and updating configuration.
+# For example, you might want to check the Nginx error log:
+# sudo tail -n 50 /var/log/nginx/error.log
+
+# Restart Nginx
+sudo service nginx restart
+
+# Check listening ports again
+if sudo netstat -tulpn | grep -q :80; then
+  echo "Nginx is now listening on port 80 for all active IPv4 addresses."
+else
+  echo "Failed to make Nginx listen on port 80 for all active IPv4 addresses."
 fi
