@@ -16,7 +16,7 @@ else
   # Additional debugging steps go here, such as checking logs and updating configuration.
 
   # Restart Nginx
-  sudo service restart nginx
+  sudo service nginx restart
 
   # Check listening ports again
   if sudo netstat -tulpn | grep -q :80; then
