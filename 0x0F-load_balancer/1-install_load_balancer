@@ -17,7 +17,7 @@ frontend  tatenda_frontend
         default_backend tatenda_backend
 backend tatenda_backend
         balance roundrobin
-        server 422468-web-01 54.209.61.253:80 check
+        server 422468-web-01 54.227.222.45:80 check
         server 422468-web-02 54.152.206.176:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
